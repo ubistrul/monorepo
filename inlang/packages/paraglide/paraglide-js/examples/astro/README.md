@@ -42,6 +42,7 @@ export default defineConfig({
 ### 3. Create or add the paraglide js server middleware to the `src/middleware.ts` file:
 
 ```diff
+import { defineMiddleware } from "astro:middleware";
 import { serverMiddleware } from "./paralide/runtime.js";
 
 export const onRequest = defineMiddleware((context, next) => {
